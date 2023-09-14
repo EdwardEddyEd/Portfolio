@@ -10,11 +10,22 @@ export interface IHeroProps {
     about: string;
 };
 
+export interface ISectionProps {
+    title: string;
+}
+
 export interface ISkillProps {
-    type: "Language" | "Library" | "Framework" | "Tool";
+    type: "Language" | "Framework" | "Tool";
     title: string; 
     imageUrl: string;
 };
+
+export interface ISkillListProps {
+    types: string[];
+    listTitle: string;
+    skills: ISkillProps[];
+};
+
 
 export interface IExperienceProps {
     title: string;
