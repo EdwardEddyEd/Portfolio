@@ -3,7 +3,7 @@ export const info = {
     name: "Edward Camp",
     jobDescription: "Full-Stack Engineer and Data Scientist",
   
-    about: `I'm a software engineer transitioning into the tech industry.
+    about: `Hi! I'm a software engineer transitioning into the tech industry.
       I enjoy creating applications for the web, phone, and desktops, whether for research or personal use.
       I have worked with web technologies for the past 5 years in research with experiences in frontend, backend, and data analysis.
       I have completed several projects as a researcher that have ignited my interest in learning and exploring new technologies.
@@ -12,112 +12,112 @@ export const info = {
       {
         type: "Language",
         title: "Javascript",
-        icon: ""
+        imageUrl: "/assets/devicons/javascript-white.svg"
       },
       {
         type: "Language",
         title: "Typescript",
-        icon: ""
+        imageUrl: "/assets/devicons/typescript-white.svg"
       },
       {
         type: "Language",
         title: "HTML",
-        icon: ""
+        imageUrl: "/assets/devicons/html5-white.svg"
       },
       {
         type: "Language",
         title: "CSS",
-        icon: ""
+        imageUrl: "/assets/devicons/css3-white.svg"
       },
       {
         type: "Language",
         title: "MySQL",
-        icon: ""
+        imageUrl: "/assets/devicons/mysql-white.svg"
       },
       {
         type: "Language",
         title: "PostgreSQL",
-        icon: ""
+        imageUrl: "/assets/devicons/postgresql-white.svg"
       },
       {
         type: "Language",
         title: "Python",
-        icon: ""
+        imageUrl: "/assets/devicons/python-white.svg"
       },
       {
         type: "Language",
         title: "R",
-        icon: ""
+        imageUrl: "/assets/devicons/r-white.svg"
       },
       {
-        type: "Library",
+        type: "Framework",
         title: "React",
-        icon: ""
+        imageUrl: "/assets/devicons/react-white.svg"
       },
       {
-        type: "Library",
+        type: "Framework",
         title: "React Native",
-        icon: ""
+        imageUrl: "/assets/devicons/react-white.svg"
       },
       {
-        type: "Library",
+        type: "Framework",
         title: "NodeJS",
-        icon: ""
+        imageUrl: "/assets/devicons/nodejs-white.svg"
       },
       {
         type: "Framework",
         title: "ExpressJS",
-        icon: ""
+        imageUrl: "/assets/devicons/express-white.svg"
       },
       {
-        type: "Library",
+        type: "Framework",
         title: "Sequelize",
-        icon: ""
+        imageUrl: "/assets/devicons/sequelize-white.svg"
       },
       {
         type: "Framework",
         title: "Astro",
-        icon: ""
+        imageUrl: "/assets/devicons/astro-white.svg"
       },
       {
         type: "Tool",
         title: "Git",
-        icon: ""
+        imageUrl: "/assets/devicons/git-white.svg"
       },
       {
         type: "Tool",
         title: "GitHub",
-        icon: ""
+        imageUrl: "/assets/devicons/github-white.svg"
       },
       {
         type: "Tool",
         title: "Bash",
-        icon: ""
+        imageUrl: "/assets/devicons/bash-white.svg"
       },
       {
         type: "Tool",
         title: "Docker",
-        icon: ""
+        imageUrl: "/assets/devicons/docker-white.svg"
       },
       {
         type: "Tool",
         title: "Insomnia",
-        icon: ""
+        imageUrl: "/assets/devicons/insomnia-white.svg"
       },
       {
         type: "Tool",
         title: "pgAdmin",
-        icon: ""
+        imageUrl: "/assets/devicons/postgresql-white.svg"
       },
       {
         type: "Tool",
         title: "PyQt",
-        icon: ""
+        imageUrl: "/assets/devicons/qt-white.svg"
       },
       {
         type: "Tool",
         title: "Illustrator",
-        icon: ""
+        imageUrl: "/assets/devicons/illustrator-white.svg"
       },
     ],
     experiences: [
