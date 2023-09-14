@@ -10,11 +10,15 @@
 
 /* ========== tailwind custom styles ========== */
 @layer components {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+  }  
   body {
     @apply bg-dark text-light;
   }
   .container {
-    @apply max-w-[1112px] mx-auto px-4;
+    @apply max-w-[1112px] mx-auto px-4 sm:px-20;
   }
   h1,
   h2,
@@ -30,8 +34,11 @@
   h2 {
     @apply text-3xl font-semibold;
   }
-  a h2 {
-    @apply text-3xl opacity-60 hover:opacity-100 transition-opacity duration-100;
+  h3 {
+    @apply text-xl tracking-widest;
+  }
+  nav ul li {
+    @apply opacity-60 font-semibold hover:opacity-100 transition-opacity duration-100;
   }
   p,
   li,
