@@ -32,6 +32,7 @@ export interface IExperienceProps {
     startDate: string;
     endDate: string;
     description: string;
+    siteUrl: string;
 };
 
 export interface IExperienceListProps {

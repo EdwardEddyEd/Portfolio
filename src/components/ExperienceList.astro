@@ -10,7 +10,11 @@ const { experiences } = Astro.props as IExperienceListProps;
             return (
                 <div>
                     <div class="flex flex-row justify-between items-center flex-wrap">
-                        <h3 class="mr-6 hover:text-neon-teal cursor-pointer transition-all duration-100">{experience.title}</h3>
+                        <a href={experience.siteUrl}>
+                            <h3 class="mr-6 hover:text-neon-teal cursor-pointer transition-all duration-100">
+                                {experience.title}
+                            </h3>
+                        </a>
                         <p class="whitespace-pre text-slate-400 pt-0.5 sm:w-auto w-100">
                             {experience.startDate} - {experience.endDate}
                         </p>

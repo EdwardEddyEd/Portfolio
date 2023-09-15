@@ -127,6 +127,7 @@ export const info = {
         startDate: "July 2021",
         endDate: "Present",
         description: "Designed and developed a mobile and web app for research participants and coordinators to conduct a study to amplify logging activity and drive health improvements for patients with epilepsy. Collaborated with clinicians, coordinators, and participants to iteratively improve user experience and data analysis.",
+        siteUrl: "https://www.dartmouth-hitchcock.org/hobscotch-institute"
       },
       {
         title: "Epilepsy and Cognition Lab",
@@ -134,6 +135,7 @@ export const info = {
         startDate: "July 2018",
         endDate: "July 2021",
         description: "Teamed with clinicians and PhD candidates on various studies to publications, performing data analysis and developing web apps and desktop applications. Programmed, designed, and maintained the lab website to increase lab exposure to Dartmouth and the research community.",
+        siteUrl: "https://www.ecoglab.org/"
       },
       {
         title: "Computational and Cognitive Neuroscience Lab",
@@ -141,6 +143,7 @@ export const info = {
         startDate: "Jan 2017",
         endDate: "July 2019",
         description: "Implemented full-stack web apps of controlled research experiments to be deployed on Amazon Mechanical Turk and boost participant enrollment.",
+        siteUrl: "http://ccnl.dartmouth.edu/"
       },
 
     ],
