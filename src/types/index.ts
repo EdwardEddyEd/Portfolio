@@ -26,7 +26,6 @@ export interface ISkillListProps {
     skills: ISkillProps[];
 };
 
-
 export interface IExperienceProps {
     title: string;
     location: string;
@@ -34,6 +33,10 @@ export interface IExperienceProps {
     endDate: string;
     description: string;
 };
+
+export interface IExperienceListProps {
+    experiences: IExperienceProps[];
+}
 
 export interface IProjectProps {
     title: string;

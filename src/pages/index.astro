@@ -7,6 +7,7 @@ import Hero from "@components/Hero.astro";
 import Section from "@components/Section.astro";
 
 import SkillList from "@components/SkillList.astro";
+import ExperienceList from "@components/ExperienceList.astro";
 ---
 
 <!doctype html>
@@ -24,76 +25,32 @@ import SkillList from "@components/SkillList.astro";
             />
 
             <Section title="Skills">
-                <SkillList
-                    types={["Language"]}
-                    listTitle="Languages"
-                    skills={info.skills}
-                />
-                <SkillList
-                    types={["Framework"]}
-                    listTitle="Frameworks"
-                    skills={info.skills}
-                />
-                <SkillList
-                    types={["Tool"]}
-                    listTitle="Tools & Design"
-                    skills={info.skills}
-                />
+                <div class="flex flex-row justify-between flex-wrap gap-8">
+                    <SkillList
+                        types={["Language"]}
+                        listTitle="Languages"
+                        skills={info.skills}
+                    />
+                    <SkillList
+                        types={["Framework"]}
+                        listTitle="Frameworks"
+                        skills={info.skills}
+                    />
+                    <SkillList
+                        types={["Tool"]}
+                        listTitle="Tools & Design"
+                        skills={info.skills}
+                    />
+                </div>
             </Section>
 
             <Section title="Experiences">
-                <SkillList
-                    types={["Language"]}
-                    listTitle="Languages"
-                    skills={info.skills}
-                />
-                <SkillList
-                    types={["Framework"]}
-                    listTitle="Frameworks"
-                    skills={info.skills}
-                />
-                <SkillList
-                    types={["Tool"]}
-                    listTitle="Tools & Design"
-                    skills={info.skills}
-                />
+                <ExperienceList experiences={info.experiences}/>
             </Section>
 
-            <Section title="Projects">
-                <SkillList
-                    types={["Language"]}
-                    listTitle="Languages"
-                    skills={info.skills}
-                />
-                <SkillList
-                    types={["Framework"]}
-                    listTitle="Frameworks"
-                    skills={info.skills}
-                />
-                <SkillList
-                    types={["Tool"]}
-                    listTitle="Tools & Design"
-                    skills={info.skills}
-                />
-            </Section>
+            <Section title="Projects" />
 
-            <Section title="Education">
-                <SkillList
-                    types={["Language"]}
-                    listTitle="Languages"
-                    skills={info.skills}
-                />
-                <SkillList
-                    types={["Framework"]}
-                    listTitle="Frameworks"
-                    skills={info.skills}
-                />
-                <SkillList
-                    types={["Tool"]}
-                    listTitle="Tools & Design"
-                    skills={info.skills}
-                />
-            </Section>
+            <Section title="Education" />
         </Layout>
         <script is:inline>
             const sections = document.querySelectorAll("section");
@@ -104,7 +61,7 @@ import SkillList from "@components/SkillList.astro";
                 sections.forEach((section) => {
                     const sectionTop = section.offsetTop;
                     const sectionHeight = section.clientHeight;
-                    if (window.scrollY >= sectionTop - sectionHeight/.9)
+                    if (window.scrollY >= sectionTop - sectionHeight / 0.9)
                         current = section.getAttribute("id");
                 });
 
@@ -112,8 +69,7 @@ import SkillList from "@components/SkillList.astro";
                     li.classList.remove("opacity-60");
                     if (li.classList.contains(current))
                         li.classList.add("opacity-100");
-                    else
-                        li.classList.add("opacity-60");
+                    else li.classList.add("opacity-60");
                 });
             });
         </script>

@@ -1,0 +1,24 @@
+---
+import { type IExperienceListProps, type IExperienceProps } from "@types";
+
+const { experiences } = Astro.props as IExperienceListProps;
+---
+
+<div class="flex flex-col gap-y-8">
+    {
+        experiences.map((experience: IExperienceProps) => {
+            return (
+                <div>
+                    <div class="flex flex-row justify-between items-center flex-wrap">
+                        <h3 class="mr-6 hover:text-neon-teal cursor-pointer transition-all duration-100">{experience.title}</h3>
+                        <p class="whitespace-pre text-slate-400 pt-0.5 sm:w-auto w-100">
+                            {experience.startDate} - {experience.endDate}
+                        </p>
+                    </div>
+                    <p class="text-neon-teal pt-0.5">{experience.location}</p>
+                    <p class="pt-2 text-slate-400">{experience.description}</p>
+                </div>
+            );
+        })
+    }
+</div>
