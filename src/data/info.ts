@@ -185,7 +185,7 @@ export const info = {
         liveLink: ""
       },
     ],
-    education: [
+    educations: [
       {
         institution: "Dartmouth College",
         location: "Hanover, New Hampshire, USA",

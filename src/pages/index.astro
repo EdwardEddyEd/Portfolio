@@ -9,8 +9,7 @@ import Section from "@components/Section.astro";
 import SkillList from "@components/SkillList.astro";
 import ExperienceList from "@components/ExperienceList.astro";
 import ProjectList from "@components/ProjectList.astro";
-
-const project = info.projects[0];
+import EducationList from "@components/EducationList.astro";
 ---
 
 <!doctype html>
@@ -55,9 +54,12 @@ const project = info.projects[0];
                 <ProjectList projects={info.projects} />
             </Section>
 
-            <Section title="Education" />
+            <Section title="Education">
+                <EducationList educations={info.educations}/>
+            </Section>
         </Layout>
-        <script is:inline>
+
+        <script is:inline defer>
             const sections = document.querySelectorAll("section");
             const navLinks = document.querySelectorAll("nav ul li");
 
@@ -66,7 +68,7 @@ const project = info.projects[0];
                 sections.forEach((section) => {
                     const sectionTop = section.offsetTop;
                     const sectionHeight = section.clientHeight;
-                    if (window.scrollY >= sectionTop - sectionHeight / 0.9)
+                    if (window.scrollY >= sectionTop - sectionHeight)
                         current = section.getAttribute("id");
                 });
 

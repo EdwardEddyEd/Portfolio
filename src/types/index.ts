@@ -60,3 +60,7 @@ export interface IEducationProps {
     endYear: string;
     degree: string;
 };
+
+export interface IEducationListProps {
+    educations: IEducationProps[];
+}
