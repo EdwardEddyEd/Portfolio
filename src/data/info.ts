@@ -4,9 +4,8 @@ export const info = {
   jobDescription: "Full-Stack Engineer and Data Scientist",
 
   about: `Hi! I'm a software engineer transitioning into the tech industry.
-      I enjoy creating applications for the web, phone, and desktops, whether for research or personal use.
-      I have worked with web technologies for the past 5 years in research with experiences in frontend, backend, and data analysis.
-      I have completed several projects as a researcher that have ignited my interest in learning and exploring new technologies.
+      I have enjoyed creating applications for the web, phone, and desktops for the past 5 years in research with experiences in frontend, backend, and data analysis.
+      I have completed several projects as a researcher that have developed my interest in learning and exploring new technologies.
     `,
   skills: [
     {
@@ -58,6 +57,16 @@ export const info = {
       type: "Framework",
       title: "React Native",
       imageUrl: "/assets/devicons/react-white.svg"
+    },
+    {
+      type: "Framework",
+      title: "Tailwind CSS",
+      imageUrl: "/assets/devicons/tailwindcss-white.svg"
+    },
+    {
+      type: "Framework",
+      title: "Bootstrap",
+      imageUrl: "/assets/devicons/bootstrap-white.svg"
     },
     {
       type: "Framework",
@@ -150,16 +159,16 @@ export const info = {
   projects: [
     {
       title: "HOBSCOTCH Research Study",
-      thumbnail: "/assets/images/example-pic.jpeg",
-      techTags: ["Typescript", "Javascript", "React", "React Native", "NodeJS", "ExpressJS", "PostgreSQL", "Sequelize"],
-      shortDescription: "A full-stack application that helps run the HOBSCOTCH program's research study to improve health outcomes of patients with epilepsy. Coordinators use the web app dashboard to add participants and modify study variables. Participants enroll and use the mobile app to answer daily logs with reminder notifications.",
+      thumbnail: "/assets/images/HOBSCOTCH_Dashboard.png",
+      techTags: ["Typescript", "Javascript", "React", "React Native", "Tailwind CSS", "NodeJS", "ExpressJS", "PostgreSQL", "Sequelize"],
+      shortDescription: "A full-stack application that helps run the HOBSCOTCH program's research study to improve health outcomes of patients with epilepsy. Coordinators use the web app dashboard to add participants and modify study variables. Participants enroll and use the mobile app to answer daily logs with reminder notifications. Demo version to be shown soon.",
       longDescription: [],
       githubLink: "",
       liveLink: ""
     },
     {
       title: "Portfolio",
-      thumbnail: "/assets/images/example-pic.jpeg",
+      thumbnail: "/assets/images/PortfolioWebsite.png",
       techTags: ["Typescript", "HTML", "Astro", "Tailwind CSS"],
       shortDescription: "A static site generated with Astro to build my portfolio and present my experiences on the web.",
       longDescription: [],
@@ -168,16 +177,25 @@ export const info = {
     },
     {
       title: "Epilepsy and Cognition Lab Website",
-      thumbnail: "/assets/images/example-pic.jpeg",
-      techTags: ["HTML", "CSS", "Javascript"],
+      thumbnail: "/assets/images/ECoGLabWebsite.png",
+      techTags: ["HTML", "CSS", "Javascript", "Bootstrap"],
       shortDescription: "A website developed to improve on the previous iteration of the Epilepsy and Cognition Lab's site in 2018. This site was replaced in 2021 but used as a design template",
       longDescription: [],
       githubLink: "",
-      liveLink: ""
+      liveLink: "https://edwardeddyed.me/ecoglab_oldwebsite/"
+    },
+    {
+      title: "Managing Epilepsy Well Depression Outcome Calculator",
+      thumbnail: "/assets/images/MEW-Depression-Calculator.png",
+      techTags: ["HTML", "CSS", "Javascript", "Bootstrap", "Python"],
+      shortDescription: "A web interface to a trained model to predict if an epilepsy self-managment intervention could improve a patient with epilepsy's depression rating.",
+      longDescription: [],
+      githubLink: "",
+      liveLink: "https://mlmewcalculator.github.io/"
     },
     {
       title: "Interictal Spike Rater",
-      thumbnail: "/assets/images/example-pic.jpeg",
+      thumbnail: "/assets/images/SpikeRaterApp.png",
       techTags: ["Python", "PyQt"],
       shortDescription: "A desktop application that allows clinicians to grade morphological spikes in patients' brain wave activities (EEG) as either interictal epileptiform discharges (IED) or not. The gradings were used to subsequently train a signal detector to better and quickly identify IEDs in EEGs for other studies.",
       longDescription: [],
@@ -191,7 +209,8 @@ export const info = {
       location: "Hanover, New Hampshire, USA",
       startYear: "2014",
       endYear: "2018",
-      degree: "Bachelor of Arts, Major in Computer Science"
+      degree: "Bachelor of Arts, Major in Computer Science",
+      siteUrl: "https://home.dartmouth.edu/"
     }
   ],
   socials: [

@@ -15,3 +15,11 @@ All commands are run from the root of the project, from a terminal:
 | `yarn astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `yarn astro -- --help` | Get help using the Astro CLI                     |
 
+
+## TODO:
+* Link icon for titles that go to links
+    * Allow icon to spin
+* Hover over skills for colored icon
+* Sticky Headers for mobile
+* Animate content on appearance
+* Animate Hero spotlights

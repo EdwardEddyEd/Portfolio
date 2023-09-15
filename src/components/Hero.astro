@@ -5,11 +5,15 @@ const { name, jobDescription, about } = Astro.props as IHeroProps;
 ---
 
 <section class="flex flex-col gap-4 h-[100dvh] justify-center">
-    <h1 class="font-bold">{name}</h1>
+    <div class="relative">
+        <div class="background_spotlight_top_left absolute"/>
+        <h1 class="font-bold">{name}</h1>
+    </div>
     <div>
         <h2 class="gradient_text">{jobDescription}</h2>
     </div>
-    <p class="text-lg mt-4 mb-16 text-slate-400">
-        {about}
-    </p>
+    <div class="relative">
+        <div class="background_spotlight_bottom_right absolute right-0 bottom-0"/>
+        <p class="text-lg mt-4 mb-16 text-slate-400">{about}</p>
+    </div>
 </section>

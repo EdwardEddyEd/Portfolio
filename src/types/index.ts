@@ -59,6 +59,7 @@ export interface IEducationProps {
     startYear: string;
     endYear: string;
     degree: string;
+    siteUrl: string;
 };
 
 export interface IEducationListProps {

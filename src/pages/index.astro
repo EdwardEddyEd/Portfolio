@@ -18,7 +18,7 @@ import EducationList from "@components/EducationList.astro";
         <MetaHead title={"Portfolio"} description={info.about} />
     </head>
 
-    <body class="relative">
+    <body class="relative overflow-x-hidden">
         <Layout>
             <Hero
                 name={info.name}
@@ -68,10 +68,11 @@ import EducationList from "@components/EducationList.astro";
                 let current = "";
                 sections.forEach((section) => {
                     const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-                    if (window.scrollY >= sectionTop - sectionHeight)
+                    if (window.scrollY >= sectionTop - window.screen.height / 3.25)
                         current = section.getAttribute("id");
                 });
+
+                console.log(current);
 
                 navLinks.forEach((li) => {
                     li.classList.remove("opacity-60");
