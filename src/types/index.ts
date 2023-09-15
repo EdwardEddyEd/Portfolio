@@ -18,6 +18,7 @@ export interface ISkillProps {
     type: "Language" | "Framework" | "Tool";
     title: string; 
     imageUrl: string;
+    hoverImageUrl: string;
 };
 
 export interface ISkillListProps {
@@ -70,4 +71,12 @@ export interface ISocialProps {
     name: string;
     url: string;
     imageUrl: string;
+}
+
+export interface IIconProps {
+    url: string;
+    hoverUrl: string;
+    altTag: string;
+    width: string;
+    height: string;
 }

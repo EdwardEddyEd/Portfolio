@@ -1,0 +1,26 @@
+---
+import { type IIconProps } from "@types";
+
+const { url, hoverUrl, altTag, height, width } = Astro.props as IIconProps;
+---
+
+<div class="relative">
+    <img
+        class="skill_icon_white_hover"
+        src={hoverUrl}
+        alt={altTag}
+        decoding="async"
+        loading="lazy"
+        height={height}
+        width={width}
+    />
+    <img
+        class="skill_icon_slate"
+        src={url}
+        alt={altTag}
+        decoding="async"
+        loading="lazy"
+        height={height}
+        width={width}
+    />
+</div>

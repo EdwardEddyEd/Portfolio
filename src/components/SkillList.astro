@@ -1,5 +1,6 @@
 ---
 import { type ISkillListProps, type ISkillProps } from "@types";
+import HoverIcon from "./HoverIcon.astro";
 
 const { types, listTitle, skills } = Astro.props as ISkillListProps;
 ---
@@ -13,13 +14,14 @@ const { types, listTitle, skills } = Astro.props as ISkillListProps;
                 .filter((skill: ISkillProps) => types.includes(skill.type))
                 .map((skill: ISkillProps) => {
                     return (
-                        <li class="flex flex-row items-center gap-4 my-1.5 text-slate-400">
-                            <div class="h-6 w-6">
-                                <img
-                                    src={skill.imageUrl}
-                                    alt={`A SVG Icon of ${skill.title}`}
-                                    decoding="async"
-                                    loading="lazy"
+                        <li class="flex flex-row items-center gap-4 my-1.5 text-slate-400 hover:text-light transition-colors duration-150 skill_line">
+                            <div>
+                                <HoverIcon 
+                                    url={skill.imageUrl}
+                                    hoverUrl={skill.hoverImageUrl}
+                                    altTag={`A SVG Icon of ${skill.title}`}
+                                    height="24px"
+                                    width="24px"
                                 />
                             </div>
                             <p class="">{skill.title}</p>

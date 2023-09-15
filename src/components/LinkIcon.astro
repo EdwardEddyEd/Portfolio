@@ -1,0 +1,27 @@
+---
+import { type IIconProps } from "@types";
+
+const { height, width } = Astro.props as IIconProps;
+---
+
+<div class="relative inline-flex ml-2">
+    <div class="link-spin">
+        <img
+            class="link-icon-hover"
+            src="/assets/socialicons/link-neon-teal.svg"
+            alt="Link SVG Icon"
+            decoding="async"
+            loading="lazy"
+            height={height}
+            width={width}
+        />
+        <img
+            src="/assets/socialicons/link-slate.svg"
+            alt="Link SVG Icon"
+            decoding="async"
+            loading="lazy"
+            height={height}
+            width={width}
+        />
+    </div>
+</div>

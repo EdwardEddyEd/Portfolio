@@ -1,5 +1,6 @@
 ---
 import { type IExperienceListProps, type IExperienceProps } from "@types";
+import LinkIcon from "./LinkIcon.astro";
 
 const { experiences } = Astro.props as IExperienceListProps;
 ---
@@ -7,14 +8,27 @@ const { experiences } = Astro.props as IExperienceListProps;
 <div class="flex flex-col gap-y-8">
     {
         experiences.map((experience: IExperienceProps) => {
+            const experienceTitle =
+                experience.siteUrl && experience.siteUrl.trim() !== "" ? (
+                    <a
+                        href={experience.siteUrl}
+                        class="flex flex-row flex-wrap items-center hover:text-neon-teal cursor-pointer transition-all duration-150 link-title"
+                    >
+                        <h3>
+                            {experience.title}{" "}
+                            <LinkIcon width="14px" height="14px" />
+                        </h3>
+                    </a>
+                ) : (
+                    <div class="flex flex-row">
+                        <h3>{experience.title}</h3>
+                    </div>
+                );
+
             return (
                 <div>
                     <div class="flex flex-row justify-between items-center flex-wrap">
-                        <a href={experience.siteUrl}>
-                            <h3 class="mr-6 hover:text-neon-teal cursor-pointer transition-all duration-150">
-                                {experience.title}
-                            </h3>
-                        </a>
+                        {experienceTitle}
                         <p class="whitespace-pre text-slate-400 pt-0.5 sm:w-auto w-100">
                             {experience.startDate} - {experience.endDate}
                         </p>

@@ -11,122 +11,146 @@ export const info = {
     {
       type: "Language",
       title: "Javascript",
-      imageUrl: "/assets/devicons/javascript-white.svg"
+      imageUrl: "/assets/devicons/javascript-slate.svg",
+      hoverImageUrl: "/assets/devicons/javascript-white.svg",
     },
     {
       type: "Language",
       title: "Typescript",
-      imageUrl: "/assets/devicons/typescript-white.svg"
+      imageUrl: "/assets/devicons/typescript-slate.svg",
+      hoverImageUrl: "/assets/devicons/typescript-white.svg",
     },
     {
       type: "Language",
       title: "HTML",
-      imageUrl: "/assets/devicons/html5-white.svg"
+      imageUrl: "/assets/devicons/html5-slate.svg",
+      hoverImageUrl: "/assets/devicons/html5-white.svg",
     },
     {
       type: "Language",
       title: "CSS",
-      imageUrl: "/assets/devicons/css3-white.svg"
+      imageUrl: "/assets/devicons/css3-slate.svg",
+      hoverImageUrl: "/assets/devicons/css3-white.svg",
     },
     {
       type: "Language",
       title: "MySQL",
-      imageUrl: "/assets/devicons/mysql-white.svg"
+      imageUrl: "/assets/devicons/mysql-slate.svg",
+      hoverImageUrl: "/assets/devicons/mysql-white.svg",
     },
     {
       type: "Language",
       title: "PostgreSQL",
-      imageUrl: "/assets/devicons/postgresql-white.svg"
+      imageUrl: "/assets/devicons/postgresql-slate.svg",
+      hoverImageUrl: "/assets/devicons/postgresql-white.svg",
     },
     {
       type: "Language",
       title: "Python",
-      imageUrl: "/assets/devicons/python-white.svg"
+      imageUrl: "/assets/devicons/python-slate.svg",
+      hoverImageUrl: "/assets/devicons/python-white.svg",
     },
     {
       type: "Language",
       title: "R",
-      imageUrl: "/assets/devicons/r-white.svg"
+      imageUrl: "/assets/devicons/r-slate.svg",
+      hoverImageUrl: "/assets/devicons/r-white.svg",
     },
     {
       type: "Framework",
       title: "React",
-      imageUrl: "/assets/devicons/react-white.svg"
+      imageUrl: "/assets/devicons/react-slate.svg",
+      hoverImageUrl: "/assets/devicons/react-white.svg",
     },
     {
       type: "Framework",
       title: "React Native",
-      imageUrl: "/assets/devicons/react-white.svg"
+      imageUrl: "/assets/devicons/react-slate.svg",
+      hoverImageUrl: "/assets/devicons/react-white.svg",
     },
     {
       type: "Framework",
       title: "Tailwind CSS",
-      imageUrl: "/assets/devicons/tailwindcss-white.svg"
+      imageUrl: "/assets/devicons/tailwindcss-slate.svg",
+      hoverImageUrl: "/assets/devicons/tailwindcss-white.svg",
     },
     {
       type: "Framework",
       title: "Bootstrap",
-      imageUrl: "/assets/devicons/bootstrap-white.svg"
+      imageUrl: "/assets/devicons/bootstrap-slate.svg",
+      hoverImageUrl: "/assets/devicons/bootstrap-white.svg",
     },
     {
       type: "Framework",
       title: "NodeJS",
-      imageUrl: "/assets/devicons/nodejs-white.svg"
+      imageUrl: "/assets/devicons/nodejs-slate.svg",
+      hoverImageUrl: "/assets/devicons/nodejs-white.svg",
     },
     {
       type: "Framework",
       title: "ExpressJS",
-      imageUrl: "/assets/devicons/express-white.svg"
+      imageUrl: "/assets/devicons/express-slate.svg",
+      hoverImageUrl: "/assets/devicons/express-white.svg",
     },
     {
       type: "Framework",
       title: "Sequelize",
-      imageUrl: "/assets/devicons/sequelize-white.svg"
+      imageUrl: "/assets/devicons/sequelize-slate.svg",
+      hoverImageUrl: "/assets/devicons/sequelize-white.svg",
     },
     {
       type: "Framework",
       title: "Astro",
-      imageUrl: "/assets/devicons/astro-white.svg"
+      imageUrl: "/assets/devicons/astro-slate.svg",
+      hoverImageUrl: "/assets/devicons/astro-white.svg",
     },
     {
       type: "Tool",
       title: "Git",
-      imageUrl: "/assets/devicons/git-white.svg"
+      imageUrl: "/assets/devicons/git-slate.svg",
+      hoverImageUrl: "/assets/devicons/git-white.svg",
     },
     {
       type: "Tool",
       title: "GitHub",
-      imageUrl: "/assets/devicons/github-white.svg"
+      imageUrl: "/assets/devicons/github-slate.svg",
+      hoverImageUrl: "/assets/devicons/github-white.svg",
     },
     {
       type: "Tool",
       title: "Bash",
-      imageUrl: "/assets/devicons/bash-white.svg"
+      imageUrl: "/assets/devicons/bash-slate.svg",
+      hoverImageUrl: "/assets/devicons/bash-white.svg",
     },
     {
       type: "Tool",
       title: "Docker",
-      imageUrl: "/assets/devicons/docker-white.svg"
+      imageUrl: "/assets/devicons/docker-slate.svg",
+      hoverImageUrl: "/assets/devicons/docker-white.svg",
     },
     {
       type: "Tool",
       title: "Insomnia",
-      imageUrl: "/assets/devicons/insomnia-white.svg"
+      imageUrl: "/assets/devicons/insomnia-slate.svg",
+      hoverImageUrl: "/assets/devicons/insomnia-white.svg",
     },
     {
       type: "Tool",
       title: "pgAdmin",
-      imageUrl: "/assets/devicons/postgresql-white.svg"
+      imageUrl: "/assets/devicons/postgresql-slate.svg",
+      hoverImageUrl: "/assets/devicons/postgresql-white.svg",
     },
     {
       type: "Tool",
       title: "PyQt",
-      imageUrl: "/assets/devicons/qt-white.svg"
+      imageUrl: "/assets/devicons/qt-slate.svg",
+      hoverImageUrl: "/assets/devicons/qt-white.svg",
     },
     {
       type: "Tool",
       title: "Illustrator",
-      imageUrl: "/assets/devicons/illustrator-white.svg"
+      imageUrl: "/assets/devicons/illustrator-slate.svg",
+      hoverImageUrl: "/assets/devicons/illustrator-white.svg",
     },
   ],
   experiences: [

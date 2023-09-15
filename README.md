@@ -17,9 +17,7 @@ All commands are run from the root of the project, from a terminal:
 
 
 ## TODO:
-* Link icon for titles that go to links
-    * Allow icon to spin
-* Hover over skills for colored icon
 * Sticky Headers for mobile
 * Animate content on appearance
 * Animate Hero spotlights
+* Change CSS custom class names to use hyphens instead of underscores

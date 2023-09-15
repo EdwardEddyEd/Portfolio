@@ -1,5 +1,6 @@
 ---
 import { type IProjectListProps, type IProjectProps } from "@types";
+import LinkIcon from "./LinkIcon.astro";
 
 const { projects } = Astro.props as IProjectListProps;
 ---
@@ -7,11 +8,26 @@ const { projects } = Astro.props as IProjectListProps;
 <div class="flex flex-col gap-y-8">
     {
         projects.map((project: IProjectProps) => {
+            const projectTitle =
+                project.liveLink && project.liveLink.trim() !== "" ? (
+                    <a
+                        href={project.liveLink}
+                        class="flex flex-row flex-wrap items-center hover:text-neon-teal cursor-pointer transition-all duration-150 link-title"
+                    >
+                        <h3>
+                            {project.title}{" "}
+                            <LinkIcon width="14px" height="14px" />
+                        </h3>
+                    </a>
+                ) : (
+                    <div class="flex flex-row">
+                        <h3>{project.title}</h3>
+                    </div>
+                );
+
             return (
                 <div class="flex flex-col gap-y-3">
-                    <h3 class="hover:text-neon-teal cursor-pointer transition-all duration-150">
-                        {project.title}
-                    </h3>
+                    {projectTitle}
                     <div class="flex flex-col gap-y-3 gap-x-6 lg:flex-row">
                         <div class="lg:flex-1">
                             <img
