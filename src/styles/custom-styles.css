@@ -4,9 +4,9 @@
     font-weight: 700;
     background: linear-gradient(
       145deg,
-      #06ffff -1.72%,
-      #7081ff 50.05%,
-      #ac6dff 85.05%
+      #06ffff 10%,
+      #7081ff 50%,
+      #ac6dff 90%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

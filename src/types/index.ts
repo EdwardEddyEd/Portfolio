@@ -49,6 +49,10 @@ export interface IProjectProps {
     liveLink: string;
 };
 
+export interface IProjectListProps {
+    projects: IProjectProps[];
+}
+
 export interface IEducationProps {
     institution: string;
     location: string;

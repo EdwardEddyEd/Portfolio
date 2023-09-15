@@ -38,7 +38,7 @@
     @apply text-xl tracking-widest;
   }
   nav ul li {
-    @apply opacity-60 font-semibold hover:opacity-100 transition-opacity duration-100;
+    @apply opacity-60 font-semibold hover:opacity-100 transition-opacity duration-150;
   }
   p,
   li,

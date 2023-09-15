@@ -150,7 +150,7 @@ export const info = {
     projects: [
       {
         title: "HOBSCOTCH Research Study",
-        thumbnail: "",
+        thumbnail: "/assets/images/example-pic.jpeg",
         techTags: ["Typescript", "Javascript", "React", "React Native", "NodeJS", "ExpressJS", "PostgreSQL", "Sequelize"],
         shortDescription: "A full-stack application that helps run the HOBSCOTCH program's research study to improve health outcomes of patients with epilepsy. Coordinators use the web app dashboard to add participants and modify study variables. Participants enroll and use the mobile app to answer daily logs with reminder notifications.",
         longDescription: [],
@@ -159,6 +159,7 @@ export const info = {
       },
       {
         title: "Portfolio",
+        thumbnail: "/assets/images/example-pic.jpeg",
         techTags: ["Typescript", "HTML", "Astro", "Tailwind CSS"],
         shortDescription: "A static site generated with Astro to build my portfolio and present my experiences on the web.",
         longDescription: [],
@@ -167,6 +168,7 @@ export const info = {
       },
       {
         title: "Epilepsy and Cognition Lab Website",
+        thumbnail: "/assets/images/example-pic.jpeg",
         techTags: ["HTML", "CSS", "Javascript"],
         shortDescription: "A website developed to improve on the previous iteration of the Epilepsy and Cognition Lab's site in 2018. This site was replaced in 2021 but used as a design template",
         longDescription: [],
@@ -175,6 +177,7 @@ export const info = {
       },
       {
         title: "Interictal Spike Rater",
+        thumbnail: "/assets/images/example-pic.jpeg",
         techTags: ["Python", "PyQt"],
         shortDescription: "A desktop application that allows clinicians to grade morphological spikes in patients' brain wave activities (EEG) as either interictal epileptiform discharges (IED) or not. The gradings were used to subsequently train a signal detector to better and quickly identify IEDs in EEGs for other studies.",
         longDescription: [],

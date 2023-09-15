@@ -8,6 +8,9 @@ import Section from "@components/Section.astro";
 
 import SkillList from "@components/SkillList.astro";
 import ExperienceList from "@components/ExperienceList.astro";
+import ProjectList from "@components/ProjectList.astro";
+
+const project = info.projects[0];
 ---
 
 <!doctype html>
@@ -45,10 +48,12 @@ import ExperienceList from "@components/ExperienceList.astro";
             </Section>
 
             <Section title="Experiences">
-                <ExperienceList experiences={info.experiences}/>
+                <ExperienceList experiences={info.experiences} />
             </Section>
 
-            <Section title="Projects" />
+            <Section title="Projects">
+                <ProjectList projects={info.projects} />
+            </Section>
 
             <Section title="Education" />
         </Layout>
