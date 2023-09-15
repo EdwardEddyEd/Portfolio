@@ -64,3 +64,9 @@ export interface IEducationProps {
 export interface IEducationListProps {
     educations: IEducationProps[];
 }
+
+export interface ISocialProps {
+    name: string;
+    url: string;
+    imageUrl: string;
+}

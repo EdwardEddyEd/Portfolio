@@ -1,4 +1,44 @@
 ---
-
+import { info } from "@data";
+import { type ISocialProps } from "@types";
 ---
 
+<footer class="flex items-start justify-between flex-col sm:flex-row py-10">
+    <!-- Essentially a spacer -->
+    <div class="w-60 mb-6 sm:flex sm:justify-end sm:mr-16"></div>
+
+    <div class="w-full flex flex-col">
+        <div class="flex flex-row gap-x-4 items-center mb-4">
+            {
+                info.socials.map((social: ISocialProps) => {
+                    return (
+                        <div class="opacity-70 hover:opacity-100 transition-opacity duration-150">
+                            <a href={social.url}>
+                                <img
+                                    src={social.imageUrl}
+                                    alt={`A SVG Icon of ${social.name}`}
+                                    decoding="async"
+                                    loading="lazy"
+                                    height="28px"
+                                    width="28px"
+                                />
+                            </a>
+                        </div>
+                    );
+                })
+            }
+        </div>
+
+        <p class="text-slate-400">
+            Portfolio designed and developed by <span class="text-light"
+                >Edward Camp</span
+            > using <a
+                class="footer_tool_links astro_footer_color"
+                href="https://astro.build/">Astro</a
+            > and <a
+                class="footer_tool_links tailwind_footer_color"
+                href="https://tailwindcss.com/">Tailwind CSS</a
+            >.
+        </p>
+    </div>
+</footer>

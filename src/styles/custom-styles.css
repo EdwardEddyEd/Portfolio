@@ -1,15 +1,25 @@
 .gradient_text {
-    display: inline-block;
-    font-style: normal;
-    font-weight: 700;
-    background: linear-gradient(
-      145deg,
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  background: linear-gradient(145deg,
       #06ffff 10%,
       #7081ff 50%,
-      #ac6dff 90%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: gradient 15s ease infinite;
+      #ac6dff 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient 15s ease infinite;
+}
+
+.footer_tool_links {
+  @apply font-bold opacity-70 hover:opacity-100 transition-opacity duration-150;
+}
+
+.astro_footer_color {
+  color: #FF5D02;
+}
+
+.tailwind_footer_color {
+  color: #39BDF8;
 }
