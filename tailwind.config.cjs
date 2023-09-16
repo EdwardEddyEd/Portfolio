@@ -31,7 +31,7 @@ module.exports = {
 					'100%': { opacity: 1, transform: 'translateX(0px)' },
 				},
 				'slide-from-right': {
-					'0%': { opacity: 0, transform: 'translateX(100px)' },
+					'0%': { opacity: 0, transform: 'translateX(200px)' },
 					'100%': { opacity: 1, transform: 'translateX(0px)' },
 				},
 				'shrink-in': {

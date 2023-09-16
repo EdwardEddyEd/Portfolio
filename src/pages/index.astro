@@ -18,7 +18,7 @@ import EducationList from "@components/EducationList.astro";
         <MetaHead title={"Portfolio"} description={info.about} />
     </head>
 
-    <body class="relative overflow-x-hidden">
+    <body>
         <Layout>
             <Hero
                 name={info.name}
@@ -84,7 +84,7 @@ import EducationList from "@components/EducationList.astro";
             };
 
             const toggleOpacityOfHeroChevronButton = () => {
-                (window.scrollY >= 200) ? heroChevronButton.classList.add("opacity-0") : heroChevronButton.classList.remove("opacity-0");
+                (window.scrollY >= 100) ? heroChevronButton.classList.add("opacity-0") : heroChevronButton.classList.remove("opacity-0");
             };
 
             window.addEventListener("scroll", () => {
@@ -103,7 +103,7 @@ import EducationList from "@components/EducationList.astro";
             };
 
             let observerOptions = {
-                rootMargin: "-200px",
+                rootMargin: "-100px"
             };
 
             const observer = new IntersectionObserver((entries) => {
@@ -111,6 +111,7 @@ import EducationList from "@components/EducationList.astro";
                     if (entry.isIntersecting) {
                         Object.keys(classesToObserver).forEach((classText) => {
                             const animateClass = classesToObserver[classText];
+                            if(classText == "slide-in-from-left") console.log("Detected title:", classText, entry.target.classList, entry.target.classList.contains(classText));
                             if (entry.target.classList.contains(classText)) {
                                 entry.target.classList.add(animateClass);
                             }

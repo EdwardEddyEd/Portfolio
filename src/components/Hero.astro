@@ -13,7 +13,7 @@ const { name, jobDescription, about } = Astro.props as IHeroProps;
         <h2 class="gradient-text">{jobDescription}</h2>
     </div>
     <div class="relative">
-        <div class="background-spotlight-bottom-right absolute right-0 bottom-0 shrink-in-delay-700"/>
+        <div class="background-spotlight-bottom-right absolute right-0 bottom-0 shrink-in-delay-700 overflow-hidden"/>
         <p class="text-lg mt-4 mb-16 text-slate-400 slide-in-from-bottom-delay-400">{about}</p>
     </div>
     <div class="absolute m-auto bottom-10 self-center opacity-0 animate-[.6s_shrink-in_4s_1_forwards]">
