@@ -17,8 +17,3 @@ All commands are run from the root of the project, from a terminal:
 
 # Useful Resources
 * [CSS Animations + IntersectionObserver API](https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/)
-
-## TODO:
-* Sticky Headers for mobile
-* Animate Hero spotlights
-* Change CSS custom class names to use hyphens instead of underscores

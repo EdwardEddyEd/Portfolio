@@ -14,7 +14,7 @@ const { types, listTitle, skills } = Astro.props as ISkillListProps;
                 .filter((skill: ISkillProps) => types.includes(skill.type))
                 .map((skill: ISkillProps) => {
                     return (
-                        <li class="flex flex-row items-center gap-4 my-1.5 text-slate-400 hover:text-light transition-colors duration-150 skill_line">
+                        <li class="flex flex-row items-center gap-4 my-1.5 text-slate-400 hover:text-light transition-colors duration-150 skill-line">
                             <div>
                                 <HoverIcon 
                                     url={skill.imageUrl}

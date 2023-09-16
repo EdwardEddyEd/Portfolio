@@ -12,6 +12,8 @@ module.exports = {
 				"neon-teal": "#06ffff",
 				"mid-blue": "#7081ff",
 				"neon-purple": "#ac6dff",
+				"astro": "#FF5D02",
+				"tailwindcss": "#39BDF8",
 				dark: "#181621",
 				light: "#FFFFFF"
 			},
