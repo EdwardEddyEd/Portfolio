@@ -55,24 +55,24 @@ import EducationList from "@components/EducationList.astro";
             </Section>
 
             <Section title="Education">
-                <EducationList educations={info.educations}/>
+                <EducationList educations={info.educations} />
             </Section>
-            
         </Layout>
 
         <script is:inline defer>
             const sections = document.querySelectorAll("section");
             const navLinks = document.querySelectorAll("nav ul li");
 
-            window.addEventListener("scroll", () => {
+            const highlightDesktopNavSection = () => {
                 let current = "";
                 sections.forEach((section) => {
                     const sectionTop = section.offsetTop;
-                    if (window.scrollY >= sectionTop - window.screen.height / 3.25)
+                    if (
+                        window.scrollY >=
+                        sectionTop - window.screen.height / 3.25
+                    )
                         current = section.getAttribute("id");
                 });
-
-                console.log(current);
 
                 navLinks.forEach((li) => {
                     li.classList.remove("opacity-60");
@@ -80,6 +80,43 @@ import EducationList from "@components/EducationList.astro";
                         li.classList.add("opacity-100");
                     else li.classList.add("opacity-60");
                 });
+            };
+
+            window.addEventListener("scroll", () => {
+                highlightDesktopNavSection();
+            });
+
+            const classesToObserver = {
+                "slide-in-from-left": "animate-slide-in-from-left",
+                "slide-in-from-right": "animate-slide-in-from-right",
+                "slide-in-from-bottom": "animate-slide-in-from-bottom",
+                "slide-in-from-bottom-delay-300": "animate-slide-in-from-bottom-delay-300",
+                "slide-in-from-bottom-delay-400": "animate-slide-in-from-bottom-delay-400",
+                "shrink-in-delay-500": "animate-shrink-in-delay-500",
+                "shrink-in-delay-700": "animate-shrink-in-delay-700"
+            };
+
+            let observerOptions = {
+                rootMargin: "-200px",
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        Object.keys(classesToObserver).forEach((classText) => {
+                            const animateClass = classesToObserver[classText];
+                            if (entry.target.classList.contains(classText)) {
+                                entry.target.classList.add(animateClass);
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            Object.keys(classesToObserver).forEach((classText) => {
+                document
+                    .querySelectorAll(`.${classText}`)
+                    .forEach((el) => observer.observe(el));
             });
         </script>
     </body>

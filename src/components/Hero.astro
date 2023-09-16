@@ -6,14 +6,14 @@ const { name, jobDescription, about } = Astro.props as IHeroProps;
 
 <section class="flex flex-col gap-4 h-[100dvh] justify-center">
     <div class="relative">
-        <div class="background_spotlight_top_left absolute"/>
-        <h1 class="font-bold">{name}</h1>
+        <div class="background_spotlight_top_left absolute shrink-in-delay-500"/>
+        <h1 class="font-bold slide-in-from-bottom">{name}</h1>
     </div>
-    <div>
+    <div class="slide-in-from-bottom-delay-300">
         <h2 class="gradient_text">{jobDescription}</h2>
     </div>
     <div class="relative">
-        <div class="background_spotlight_bottom_right absolute right-0 bottom-0"/>
-        <p class="text-lg mt-4 mb-16 text-slate-400">{about}</p>
+        <div class="background_spotlight_bottom_right absolute right-0 bottom-0 shrink-in-delay-700"/>
+        <p class="text-lg mt-4 mb-16 text-slate-400 slide-in-from-bottom-delay-400">{about}</p>
     </div>
 </section>

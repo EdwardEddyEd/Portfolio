@@ -1,0 +1,20 @@
+/* Class selectors for IntersectionObserver */
+.slide-in-from-left {
+    opacity: 0;
+    transform: 'translateX(-200px)';
+}
+
+.slide-in-from-right {
+    opacity: 0; 
+    transform: 'translateX(200px)';
+}
+
+.slide-in-from-bottom, .slide-in-from-bottom-delay-300, .slide-in-from-bottom-delay-400 {
+    opacity: 0; 
+    transform: 'translateY(100px)';
+}
+
+.shrink-in-delay-500, .shrink-in-delay-700 {
+    opacity: 0;
+    transform: scale(.75);
+}

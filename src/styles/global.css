@@ -3,6 +3,7 @@
 
 /* ========== import custom styles ========== */
 @import "custom-styles.css";
+@import "appearance-transitions.css";
 
 @tailwind base;
 @tailwind components;
