@@ -4,7 +4,7 @@ import { type IHeroProps } from "@types";
 const { name, jobDescription, about } = Astro.props as IHeroProps;
 ---
 
-<section class="flex flex-col gap-4 h-[100dvh] justify-center">
+<section class="flex flex-col gap-4 h-[100dvh] justify-center relative">
     <div class="relative">
         <div class="background-spotlight-top-left absolute shrink-in-delay-500"/>
         <h1 class="font-bold slide-in-from-bottom">{name}</h1>
@@ -15,5 +15,17 @@ const { name, jobDescription, about } = Astro.props as IHeroProps;
     <div class="relative">
         <div class="background-spotlight-bottom-right absolute right-0 bottom-0 shrink-in-delay-700"/>
         <p class="text-lg mt-4 mb-16 text-slate-400 slide-in-from-bottom-delay-400">{about}</p>
+    </div>
+    <div class="absolute m-auto bottom-10 self-center opacity-0 animate-[.6s_shrink-in_4s_1_forwards]">
+        <p class="w-12 h-12 animate-bounce transition-opacity duration-500 toggle-opacity-button">
+            <a href="#Skills">
+                <img
+                src="/assets/socialicons/chevron_down.svg"
+                alt="Link SVG Icon"
+                decoding="async"
+                loading="lazy"
+                />
+            </a>
+        </p>
     </div>
 </section>

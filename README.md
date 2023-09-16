@@ -17,3 +17,6 @@ All commands are run from the root of the project, from a terminal:
 
 # Useful Resources
 * [CSS Animations + IntersectionObserver API](https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/)
+
+## TODO:
+* Chevron Down Icon - Make sure you start with an RGB document
