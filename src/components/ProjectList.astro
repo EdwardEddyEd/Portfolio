@@ -25,19 +25,34 @@ const { projects } = Astro.props as IProjectListProps;
                     </div>
                 );
 
+            const projectThumbnail =
+                project.liveLink && project.liveLink.trim() !== "" ? (
+                    <a href={project.liveLink}>
+                        <img
+                            class="rounded border-neon-teal/10 border w-full hover:border-neon-teal/70 hover:shadow-md hover:shadow-neon-teal/30 transition-all duration-200"
+                            src={project.thumbnail}
+                            alt={`An image of the ${project.title} project`}
+                            decoding="async"
+                            loading="lazy"
+                        />
+                    </a>
+                ) : (
+                    <img
+                        class="rounded border-neon-teal/10 border w-full"
+                        src={project.thumbnail}
+                        alt={`An image of the ${project.title} project`}
+                        decoding="async"
+                        loading="lazy"
+                    />
+                );
+
             return (
                 <div class="flex flex-col gap-y-3">
                     {projectTitle}
                     <div class="flex flex-col gap-y-3 gap-x-6 lg:flex-row">
                         <div class="lg:flex-1">
-                            <img
-                                class="rounded border-neon-teal/10 border"
-                                src={project.thumbnail}
-                                alt={`An image of the ${project.title} project`}
-                                decoding="async"
-                                loading="lazy"
-                            />
-                            <div class="flex flex-row flex-wrap gap-2 mt-2">
+                            {projectThumbnail}
+                            <div class="flex flex-row flex-wrap gap-2 mt-2.5">
                                 {project.techTags.map((techTag: string) => {
                                     return (
                                         <div class="border-neon-teal hover:bg-neon-teal/10 border py-1 px-2 rounded opacity-70 hover:opacity-100 transition-opacity duration-150 cursor-default">
