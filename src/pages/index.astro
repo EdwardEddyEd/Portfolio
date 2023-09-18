@@ -85,7 +85,7 @@ import EducationList from "@components/EducationList.astro";
             };
 
             const toggleOpacityOfscrollDownButton = () => {
-                (window.scrollY >= 100) ? scrollDownButton.classList.add("opacity-0") : scrollDownButton.classList.remove("opacity-0");
+                (window.scrollY >= 120) ? scrollDownButton.classList.add("opacity-0") : scrollDownButton.classList.remove("opacity-0");
             };
 
             window.addEventListener("scroll", () => {
@@ -107,7 +107,7 @@ import EducationList from "@components/EducationList.astro";
             };
 
             let observerOptions = {
-                rootMargin: "-100px"
+                rootMargin: "-80px"
             };
 
             const observer = new IntersectionObserver((entries) => {

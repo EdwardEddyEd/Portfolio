@@ -9,7 +9,26 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  transition: background 10s;
+}
+
+/* if device has a touch scree and is mobile */
+@media (hover: none) and (any-pointer: coarse) {
+  .hero-mobile-height-fix {
+    /* Specific fix for mobile height of the hero and prevent the mobile browser
+       tool bar from covering its content. */
+
+    display: 'flex';
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    height: 100dvh;
+  }
+}
+
+/* if device is not mobile */
+@media (any-pointer: fine) {
+  .hero-mobile-height-fix {
+    @apply h-screen;
+  }
 }
 
 .footer-tool-links {

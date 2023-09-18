@@ -40,7 +40,7 @@
   }
 
   h1 {
-    @apply text-6xl sm:text-8xl font-semibold;
+    @apply text-5xl sm:text-8xl font-semibold;
   }
 
   h2 {

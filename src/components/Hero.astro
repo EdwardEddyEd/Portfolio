@@ -4,7 +4,7 @@ import { type IHeroProps } from "@types";
 const { name, jobDescription, about } = Astro.props as IHeroProps;
 ---
 
-<section class="flex flex-col gap-4 h-screen justify-center relative">
+<section class="flex flex-col gap-4 hero-mobile-height-fix sm:h-screen justify-center relative mb-10">
     <div class="relative">
         <div class="background-spotlight-top-left absolute shrink-in-delay-500"/>
         <h1 class="font-bold slide-in-from-bottom">{name}</h1>
