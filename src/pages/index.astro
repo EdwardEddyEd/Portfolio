@@ -59,10 +59,11 @@ import EducationList from "@components/EducationList.astro";
             </Section>
         </Layout>
 
-        <script is:inline defer>
+        <!-- Handle navbar link highlighting and scroll down button visibility -->
+        <script>
             const sections = document.querySelectorAll("section");
             const navLinks = document.querySelectorAll("nav ul li");
-            const heroChevronButton = document.getElementsByClassName("toggle-opacity-button")[0];
+            const scrollDownButton = document.getElementsByClassName("toggle-opacity-button")[0];
 
             const highlightDesktopNavSection = () => {
                 let current = "";
@@ -83,15 +84,18 @@ import EducationList from "@components/EducationList.astro";
                 });
             };
 
-            const toggleOpacityOfHeroChevronButton = () => {
-                (window.scrollY >= 100) ? heroChevronButton.classList.add("opacity-0") : heroChevronButton.classList.remove("opacity-0");
+            const toggleOpacityOfscrollDownButton = () => {
+                (window.scrollY >= 100) ? scrollDownButton.classList.add("opacity-0") : scrollDownButton.classList.remove("opacity-0");
             };
 
             window.addEventListener("scroll", () => {
                 highlightDesktopNavSection();
-                toggleOpacityOfHeroChevronButton();
+                toggleOpacityOfscrollDownButton();
             });
+        </script>
 
+        <!-- Handle appearance animations -->
+        <script>
             const classesToObserver = {
                 "slide-in-from-left": "animate-slide-in-from-left",
                 "slide-in-from-right": "animate-slide-in-from-right",

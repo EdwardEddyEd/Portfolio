@@ -203,7 +203,7 @@ export const info = {
       title: "Epilepsy and Cognition Lab Website",
       thumbnail: "/assets/images/ECoGLabWebsite.png",
       techTags: ["HTML", "CSS", "Javascript", "Bootstrap"],
-      shortDescription: "A website developed to improve on the previous iteration of the Epilepsy and Cognition Lab's site in 2018. This site was replaced in 2021 but used as a design template",
+      shortDescription: "A website developed to improve on the previous iteration of the Epilepsy and Cognition Lab's site in 2018. This site was replaced in 2021 but used as a design template.",
       longDescription: [],
       githubLink: "",
       liveLink: "https://edwardeddyed.me/ecoglab_oldwebsite/"
