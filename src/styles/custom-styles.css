@@ -21,6 +21,7 @@
     min-height: 100vh;
     min-height: -webkit-fill-available;
     height: 100dvh;
+    transition: height .25s ease;
   }
 }
 
