@@ -114,11 +114,11 @@ import EducationList from "@components/EducationList.astro";
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         Object.keys(classesToObserver).forEach((classText) => {
+
                             const animateClass = classesToObserver[classText];
-                            if(classText == "slide-in-from-left") console.log("Detected title:", classText, entry.target.classList, entry.target.classList.contains(classText));
-                            if (entry.target.classList.contains(classText)) {
+                            if (entry.target.classList.contains(classText))
                                 entry.target.classList.add(animateClass);
-                            }
+                            
                         });
                     }
                 });

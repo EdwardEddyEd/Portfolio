@@ -17,7 +17,7 @@
 }
 
 .background-spotlight-top-left {
-  background: radial-gradient(circle at 50% 50%, #213c4a 0%, #EE82EE00 70%);
+  background: radial-gradient(circle at 50% 50%, #213c4a 0%, #213c4a00 70%);
   height: 700px;
   width: 700px;
   translate: -350px -350px;
@@ -25,7 +25,7 @@
 }
 
 .background-spotlight-bottom-right {
-  background: radial-gradient(circle at 50% 50%, #302341 0%, #EE82EE00 70%);
+  background: radial-gradient(circle at 50% 50%, #302341 0%, #30234100 70%);
   height: 800px;
   width: 800px;
   translate: 400px 400px;
