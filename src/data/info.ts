@@ -4,9 +4,9 @@ export const info = {
   jobDescription: "Full-Stack Engineer and Data Scientist",
 
   about: `Hello! 👋 I am a software engineer who is excited to pursue a career in the tech industry. 
-          Over the past 5 years, I have designed and developed many web, phone, and desktop applications and have experience in front-end, back-end, and data analysis work. 
-          As a researcher, I have completed numerous projects that have sparked my interest in exploring and learning about new technologies. 
-    `,
+Over the past 5 years, I have designed and developed many web, phone, and desktop applications and have experience in front-end, back-end, and data analysis work. 
+As a researcher, I have completed numerous projects that have sparked my interest in exploring and learning about new technologies. 
+`,
   skills: [
     {
       type: "Language",
