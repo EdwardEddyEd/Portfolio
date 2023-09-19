@@ -3,9 +3,9 @@ export const info = {
   name: "Edward Camp",
   jobDescription: "Full-Stack Engineer and Data Scientist",
 
-  about: `Hi! I'm a software engineer transitioning into the tech industry.
-      I have enjoyed creating applications for the web, phone, and desktops for the past 5 years in research with experiences in frontend, backend, and data analysis.
-      I have completed several projects as a researcher that have developed my interest in learning and exploring new technologies.
+  about: `Hello! 👋 I am a software engineer who is excited to pursue a career in the tech industry. 
+          Over the past 5 years, I have designed and developed many web, phone, and desktop applications and have experience in front-end, back-end, and data analysis work. 
+          As a researcher, I have completed numerous projects that have sparked my interest in exploring and learning about new technologies. 
     `,
   skills: [
     {
