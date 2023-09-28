@@ -185,10 +185,10 @@ As a researcher, I have completed numerous projects that have sparked my interes
       title: "HOBSCOTCH Research Study",
       thumbnail: "/assets/images/HOBSCOTCH_Dashboard_thumbnail.jpeg",
       techTags: ["Typescript", "Javascript", "React", "React Native", "Tailwind CSS", "NodeJS", "ExpressJS", "PostgreSQL", "Sequelize"],
-      shortDescription: "A full-stack application that helps run the HOBSCOTCH program's research study to improve health outcomes of patients with epilepsy. Coordinators use the web app dashboard to add participants and modify study variables. Participants enroll and use the mobile app to answer daily logs with reminder notifications. Demo version to be shown soon.",
+      shortDescription: "A full-stack application that helps run the HOBSCOTCH program's research study to improve health outcomes of patients with epilepsy. Coordinators use the web app dashboard to add participants and modify study variables. Participants enroll and use the mobile app to answer daily logs with reminder notifications. If you'd like access to the demo version of the webapp, feel free to email me for login credentials!",
       longDescription: [],
       githubLink: "",
-      liveLink: ""
+      liveLink: "https://www.edwardcamp.me/hobscotch-demo-dashboard/login"
     },
     {
       title: "Portfolio",
