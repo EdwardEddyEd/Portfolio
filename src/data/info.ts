@@ -1,7 +1,7 @@
 export const info = {
   baseUrl: "https://edward-camp-portfolio.vercel.app",
   name: "Edward Camp",
-  jobDescription: "Full-Stack Engineer and Data Scientist",
+  jobDescription: "Software Engineer and Data Scientist",
 
   about: `Hello! 👋 I am a software engineer who is excited to pursue a career in the tech industry. 
 Over the past 5 years, I have designed and developed many web, phone, and desktop applications and have experience in front-end, back-end, and data analysis work. 
@@ -34,15 +34,9 @@ As a researcher, I have completed numerous projects that have sparked my interes
     },
     {
       type: "Language",
-      title: "MySQL",
-      imageUrl: "/assets/devicons/mysql-slate.svg",
-      hoverImageUrl: "/assets/devicons/mysql-white.svg",
-    },
-    {
-      type: "Language",
-      title: "PostgreSQL",
-      imageUrl: "/assets/devicons/postgresql-slate.svg",
-      hoverImageUrl: "/assets/devicons/postgresql-white.svg",
+      title: "SQL",
+      imageUrl: "/assets/devicons/SQL-slate.svg",
+      hoverImageUrl: "/assets/devicons/SQL-white.svg",
     },
     {
       type: "Language",
@@ -55,6 +49,12 @@ As a researcher, I have completed numerous projects that have sparked my interes
       title: "R",
       imageUrl: "/assets/devicons/r-slate.svg",
       hoverImageUrl: "/assets/devicons/r-white.svg",
+    },
+    {
+      type: "Language",
+      title: "Java",
+      imageUrl: "/assets/devicons/java-plain-slate.svg",
+      hoverImageUrl: "/assets/devicons/java-plain-white.svg",
     },
     {
       type: "Framework",
@@ -94,33 +94,33 @@ As a researcher, I have completed numerous projects that have sparked my interes
     },
     {
       type: "Framework",
-      title: "Sequelize",
-      imageUrl: "/assets/devicons/sequelize-slate.svg",
-      hoverImageUrl: "/assets/devicons/sequelize-white.svg",
-    },
-    {
-      type: "Framework",
       title: "Astro",
       imageUrl: "/assets/devicons/astro-slate.svg",
       hoverImageUrl: "/assets/devicons/astro-white.svg",
+    },
+    {
+      type: "Framework",
+      title: "Pandas",
+      imageUrl: "/assets/devicons/pandas-slate.svg",
+      hoverImageUrl: "/assets/devicons/pandas-white.svg",
+    },
+    {
+      type: "Tool",
+      title: "MySQL",
+      imageUrl: "/assets/devicons/mysql-slate.svg",
+      hoverImageUrl: "/assets/devicons/mysql-white.svg",
+    },
+    {
+      type: "Tool",
+      title: "PostgreSQL",
+      imageUrl: "/assets/devicons/postgresql-slate.svg",
+      hoverImageUrl: "/assets/devicons/postgresql-white.svg",
     },
     {
       type: "Tool",
       title: "Git",
       imageUrl: "/assets/devicons/git-slate.svg",
       hoverImageUrl: "/assets/devicons/git-white.svg",
-    },
-    {
-      type: "Tool",
-      title: "GitHub",
-      imageUrl: "/assets/devicons/github-slate.svg",
-      hoverImageUrl: "/assets/devicons/github-white.svg",
-    },
-    {
-      type: "Tool",
-      title: "Bash",
-      imageUrl: "/assets/devicons/bash-slate.svg",
-      hoverImageUrl: "/assets/devicons/bash-white.svg",
     },
     {
       type: "Tool",
@@ -136,15 +136,15 @@ As a researcher, I have completed numerous projects that have sparked my interes
     },
     {
       type: "Tool",
-      title: "pgAdmin",
-      imageUrl: "/assets/devicons/postgresql-slate.svg",
-      hoverImageUrl: "/assets/devicons/postgresql-white.svg",
-    },
-    {
-      type: "Tool",
       title: "PyQt",
       imageUrl: "/assets/devicons/qt-slate.svg",
       hoverImageUrl: "/assets/devicons/qt-white.svg",
+    },
+    {
+      type: "Tool",
+      title: "RESTful",
+      imageUrl: "/assets/devicons/RESTAPI_Icon-slate.svg",
+      hoverImageUrl: "/assets/devicons/RESTAPI_Icon-white.svg",
     },
     {
       type: "Tool",
@@ -184,7 +184,7 @@ As a researcher, I have completed numerous projects that have sparked my interes
     {
       title: "HOBSCOTCH Research Study",
       thumbnail: "/assets/images/HOBSCOTCH_Dashboard_thumbnail.jpeg",
-      techTags: ["Typescript", "Javascript", "React", "React Native", "Tailwind CSS", "NodeJS", "ExpressJS", "PostgreSQL", "Sequelize"],
+      techTags: ["Typescript", "Javascript", "React", "React Native", "Tailwind CSS", "NodeJS", "ExpressJS", "PostgreSQL"],
       shortDescription: "A full-stack application that helps run the HOBSCOTCH program's research study to improve health outcomes of patients with epilepsy. Coordinators use the web app dashboard to add participants and modify study variables. Participants enroll and use the mobile app to answer daily logs with reminder notifications. If you'd like access to the demo version of the webapp, feel free to email me for login credentials!",
       longDescription: [],
       githubLink: "",
