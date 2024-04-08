@@ -94,15 +94,15 @@ As a researcher, I have completed numerous projects that have sparked my interes
     },
     {
       type: "Framework",
-      title: "Astro",
-      imageUrl: "/assets/devicons/astro-slate.svg",
-      hoverImageUrl: "/assets/devicons/astro-white.svg",
+      title: "tRPC",
+      imageUrl: "/assets/devicons/trpc-slate.svg",
+      hoverImageUrl: "/assets/devicons/trpc-white.svg",
     },
     {
       type: "Framework",
-      title: "Pandas",
-      imageUrl: "/assets/devicons/pandas-slate.svg",
-      hoverImageUrl: "/assets/devicons/pandas-white.svg",
+      title: "Astro",
+      imageUrl: "/assets/devicons/astro-slate.svg",
+      hoverImageUrl: "/assets/devicons/astro-white.svg",
     },
     {
       type: "Tool",
@@ -142,18 +142,26 @@ As a researcher, I have completed numerous projects that have sparked my interes
     },
     {
       type: "Tool",
-      title: "RESTful",
-      imageUrl: "/assets/devicons/RESTAPI_Icon-slate.svg",
-      hoverImageUrl: "/assets/devicons/RESTAPI_Icon-white.svg",
-    },
-    {
-      type: "Tool",
       title: "Illustrator",
       imageUrl: "/assets/devicons/illustrator-slate.svg",
       hoverImageUrl: "/assets/devicons/illustrator-white.svg",
     },
+    {
+      type: "Tool",
+      title: "Figma",
+      imageUrl: "/assets/devicons/figma-slate.svg",
+      hoverImageUrl: "/assets/devicons/figma-white.svg",
+    },
   ],
   experiences: [
+    {
+      title: "Anomaly Labs",
+      location: "Bakersfield, CA",
+      startDate: "Nov 2023",
+      endDate: "May 2024",
+      description: "Collaborated with cross-functional teams to quickly iterate on the company's flagship product to improve Auto Finance and Insurance (F&I) department sales. Also spearheaded the development of an internal dashboard that streamlined customer onboarding and configuration management.",
+      siteUrl: "https://www.linkedin.com/company/autotrainer"
+    },
     {
       title: "HOBSCOTCH Institute, Dartmouth Health",
       location: "Lebanon, NH",
@@ -181,6 +189,24 @@ As a researcher, I have completed numerous projects that have sparked my interes
 
   ],
   projects: [
+    {
+      title: "Anomaly Labs Internal Dashboard",
+      thumbnail: "/assets/images/AnomalyLabInternalDashboard_thumbnail.png",
+      techTags: ["Typescript", "React", "Tailwind CSS", "NodeJS", "tRPC", "PostgreSQL", "Prisma"],
+      shortDescription: "A full-stack internal company dashboard that streamlined customer onboarding and enabled non-technical employees to manage customer configuration changes, reducing onboarding time by 75%.",
+      longDescription: [],
+      githubLink: "",
+      liveLink: ""
+    },
+    {
+      title: "AutoTrainer AI",
+      thumbnail: "/assets/images/AutoTrainer_thumbnail.png",
+      techTags: ["Typescript", "React", "Tailwind CSS", "NodeJS", "tRPC", "PostgreSQL", "Prisma"],
+      shortDescription: "The flagship product of Anomaly Labs is a full-stack application that trains, scores, and benchmarks recordings of Auto F&I managers' sales pitches with the assistance of AI to improve consistency, trackability, and accountability.",
+      longDescription: [],
+      githubLink: "",
+      liveLink: "https://www.autotrainer.com/"
+    },
     {
       title: "HOBSCOTCH Research Study",
       thumbnail: "/assets/images/HOBSCOTCH_Dashboard_thumbnail.jpeg",
