@@ -1,11 +1,11 @@
 export const info = {
   baseUrl: "https://edward-camp-portfolio.vercel.app",
   name: "Edward Camp",
-  jobDescription: "Software Engineer and Data Scientist",
+  jobDescription: "Software Engineer",
 
-  about: `Hello! 👋 I am a software engineer who is excited to pursue a career in the tech industry. 
-Over the past 5 years, I have designed and developed many web, phone, and desktop applications and have experience in front-end, back-end, and data analysis work. 
-As a researcher, I have completed numerous projects that have sparked my interest in exploring and learning about new technologies. 
+  about: `Hi! 👋 I am a software engineer who is excited to pursue a career in the tech industry.
+  Over the past 5 years, I have designed and developed many web, phone, and desktop applications and have experience in front-end, back-end, and data analysis work. 
+  I enjoy exploring and learning about new technologies and am constantly seeking opportunities to expand my skill set and make a positive impact.
 `,
   skills: [
     {
