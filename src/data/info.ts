@@ -1,10 +1,10 @@
 export const info = {
-  baseUrl: "https://edward-camp-portfolio.vercel.app",
+  baseUrl: "https://edward-camp-portfolio.pages.dev",
   name: "Edward Camp",
   jobDescription: "Software Engineer",
 
   about: `Hi! 👋 I am a software engineer who is excited to pursue a career in the tech industry.
-  Over the past 5 years, I have designed and developed many web, phone, and desktop applications and have experience in front-end, back-end, and data analysis work. 
+  Over the past 6 years, I have designed and developed many web, phone, and desktop applications and have experience in front-end, back-end, and data analysis work. 
   I enjoy exploring and learning about new technologies and am constantly seeking opportunities to expand my skill set and make a positive impact.
 `,
   skills: [
@@ -155,11 +155,19 @@ export const info = {
   ],
   experiences: [
     {
+      title: "Cloudflare",
+      location: "Austin, TX",
+      startDate: "June 2024",
+      endDate: "Present",
+      description: "Contributed in enhancing an evolving platform architecture for scalability, observability, and reliability, while also building rich data sets that aid in driving innovation in data-driven insights at scale. Also collaborated with a cross functional team of engineers and analyst to design features and solutions on strategic initiatives.",
+      siteUrl: "https://www.cloudflare.com/"
+    },
+    {
       title: "Anomaly Labs",
       location: "Bakersfield, CA",
       startDate: "Nov 2023",
       endDate: "May 2024",
-      description: "Collaborated with cross-functional teams to quickly iterate on the company's flagship product to improve Auto Finance and Insurance (F&I) department sales. Also spearheaded the development of an internal dashboard that streamlined customer onboarding and configuration management.",
+      description: "Collaborated with cross functional teams to quickly iterate on the company's flagship product to improve Auto Finance and Insurance (F&I) department sales. Also spearheaded the development of an internal dashboard that streamlined customer onboarding and configuration management.",
       siteUrl: "https://www.linkedin.com/company/autotrainer"
     },
     {
